@@ -1,14 +1,16 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -e
 
-# Start Ollama in the background
+echo "Starting Ollama..."
 ollama serve &
 
-# Wait for Ollama to start (it usually takes a few seconds)
-sleep 5
+echo "Waiting for Ollama to be ready..."
+until curl -s http://127.0.0.1:11434/api/tags > /dev/null; do
+  sleep 1
+done
 
-# Pull the model you need (e.g., llama3) 
-# Note: This increases startup time. Better to bake it into the image if possible.
-ollama pull llama3
-
-# Start the Streamlit app
-uv run streamlit run app.py --server.port=8080 --server.address=0.0.0.0
+echo "Starting Streamlit..."
+exec uv run streamlit run app.py \
+  --server.port=7860 \
+  --server.address=0.0.0.0 \
+  --server.enableCORS=false

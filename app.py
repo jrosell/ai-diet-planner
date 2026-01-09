@@ -20,7 +20,7 @@ ENV_AGE = int(os.getenv("DEFAULT_AGE", 30))
 ENV_GENDER = os.getenv("DEFAULT_GENDER", "Man")
 
 # CONSTANTS
-AI_MODEL = "gemma3:1b"
+AI_MODEL = "phi3"
 DB_FILE = "diet_planner.db"
 TABLE = "user_plans"
 
