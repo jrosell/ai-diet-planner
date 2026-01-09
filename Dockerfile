@@ -42,6 +42,7 @@ VOLUME ["/root/.ollama"]
 
 EXPOSE 8080
 
-CMD uv run streamlit run app.py \
-      --server.port=8080 \
-      --server.address=0.0.0.0
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+CMD ["/entrypoint.sh"]

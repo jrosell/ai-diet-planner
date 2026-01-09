@@ -23,7 +23,7 @@ streamlit run app.py
 
 ```
 docker build -t streamlit-ollama .
-docker run --gpus all -p 8080:8080 -p 11434:11434 streamlit-ollama
+docker run --rm --gpus all -p 8080:8080 -p 11434:11434 streamlit-ollama
 ```
 
 ### Troubleshooting
