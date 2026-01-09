@@ -1,0 +1,13 @@
+[server]
+# This fixes the "inotify watch limit reached" error
+# Options: "auto", "watchdog", "poll", "none"
+# "none" is safest for environments with many files
+fileWatcherType = "none"
+
+# Set your default port and address
+port = 8080
+address = "0.0.0.0"
+
+[browser]
+# Prevents Streamlit from trying to open a browser window automatically
+gatherUsageStats = false

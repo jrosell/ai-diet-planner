@@ -1,0 +1,14 @@
+[project]
+name = "ai-diet-planner"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "duckdb>=1.4.3",
+    "ollama>=0.6.1",
+    "pandas>=2.3.3",
+    "pyarrow>=22.0.0",
+    "python-dotenv>=1.2.1",
+    "streamlit>=1.52.2",
+]
