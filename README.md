@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: AI Diet Planner
 emoji: 🥗
@@ -7,6 +8,8 @@ sdk: docker
 app_file: app.py
 pinned: false
 ---
+=======
+>>>>>>> origin/main
 ## Build and Deploy an AI-Powered Diet Planner with Streamlit, Ollama and Duckdb.
 
 In this repo you'll see how to build and deploy an AI-Powered Diet Planner. For UI using Streamlit, LLM model using Ollama, Duckdb for store data and docker container deployment.
