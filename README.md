@@ -11,12 +11,6 @@ pinned: false
 
 In this repo you'll see how to build and deploy an AI-Powered Diet Planner. For UI using Streamlit, LLM model using Ollama, Duckdb for store data and docker container deployment.
 
-Through the codelab, you will employ a step by step approach as follows:
-
-* Prepare your project.
-* Build genAI Diet Planner using streamlit, Ollama and Duckdb
-* Deploy the application using a docker contaner
-
 It's based on the codelab "Build and Deploy an AI-Powered Agent Diet Planner with Streamlit, Gemini Pro, Vertex AI and BigQuery" by Muhammad Saipul Rohman, Alvin Prayuda Juniarta Dwiyantoro.
 
 ### Installation
